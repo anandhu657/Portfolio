@@ -1,14 +1,16 @@
 function validate() {
-    var name = document.getElementById("name").value;
+    var name = document.form1.text1.value;
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
-    var error_message = document.getElementById("error_message");
+    // var error_message = document.getElementById("error_message");
 
-    error_message.style.padding = "10px";
+    // error_message.style.padding = "10px";
 
     var text;
-    if (name.length < 5) {
+    var letters = /^[A-Za-z]+$/;
+    
+    if (!name.match(letters)) {
         text = "Please Enter valid Name";
         alert(text);
         return false;
@@ -18,13 +20,13 @@ function validate() {
         alert(text);
         return false;
     }
-    if (subject.length < 10) {
-        text = "Please Enter Correct Subject";
+    if (subject == null || subject == "") {
+        text = "Enter Subject";
         alert(text);
         return false;
     }
-    if (message.length <= 20) {
-        text = "Please Enter More Than 20 Characters";
+    if (message == null || message == "") {
+        text = "Enter a message";
         alert(text);
         return false;
     }
