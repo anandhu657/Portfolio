@@ -525,11 +525,11 @@
 
 
     <!-- Contact Start -->
-    
+
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div id="error_message">
-     
+
             </div>
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
@@ -539,29 +539,31 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="form1" id="" onsubmit = "return validate();">
+                        <form action="mailto: anandhumeleveettil@gmail.com" enctype="multipart/form-data" name="form1"
+                            id="" onsubmit="return validate();">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" name='text1' class="form-control p-4" id="name" placeholder="Your Name"/>
+                                    <input type="text" name='text1' class="form-control p-4" id="name"
+                                        placeholder="Your Name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="email" placeholder="Your Email"/>
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"/>
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"></textarea>
+                                <textarea class="form-control py-3 px-4" rows="5" id="message"
+                                    placeholder="Message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
                                 <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">
-                                    <a href="mailto:anandhumeleveettil@gmail.com"> Send
-                                    Message</a></button>
+                                    Send Message</button>
                             </div>
                         </form>
                     </div>

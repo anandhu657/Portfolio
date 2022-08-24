@@ -20,12 +20,12 @@ function validate() {
         alert(text);
         return false;
     }
-    if (subject == null || subject == "") {
+    if (subject == null || subject.trim() == "") {
         text = "Enter Subject";
         alert(text);
         return false;
     }
-    if (message == null || message == "") {
+    if (message == null || message.trim() == "") {
         text = "Enter a message";
         alert(text);
         return false;
